@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rover lunar 3D</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.165.0/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@0.165.0/examples/jsm/"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <main id="scene-wrap" aria-label="Modelo 3D aproximado de un rover lunar">
+      <canvas id="scene"></canvas>
+      <section class="hud" aria-label="Controles de vista">
+        <div>
+          <h1>Rover lunar 3D</h1>
+          <p>Conduce con las flechas: arriba acelera, abajo frena, izquierda y derecha giran.</p>
+        </div>
+        <button id="reset-view" type="button" title="Recentrar camara">Recentrar</button>
+      </section>
+      <div class="hint">↑ acelerar · ↓ frenar · ← → girar · arrastra para mirar</div>
+    </main>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
